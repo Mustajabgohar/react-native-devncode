@@ -44,59 +44,15 @@ function HomeScreen({navigation}) {
             }}>
             Register your account
           </Text>
-          <TextInput
-            placeholder="Name"
-            style={{
-              backgroundColor: '#f4a261',
-              borderColor: 'black',
-              borderRadius: 20,
-              width: 250,
-              borderWidth: 2,
-              fontSize: 18,
-              paddingLeft: 15,
-              marginBottom: 5,
-              opacity: 0.9,
-            }}></TextInput>
+          <TextInput placeholder="Name" style={styles.text_input}></TextInput>
 
-          <TextInput
-            placeholder="Email"
-            style={{
-              backgroundColor: '#f4a261',
-              borderColor: 'black',
-              borderRadius: 20,
-              width: 250,
-              borderWidth: 2,
-              fontSize: 18,
-              paddingLeft: 15,
-              marginBottom: 5,
-              opacity: 0.9,
-            }}></TextInput>
+          <TextInput placeholder="Email" style={styles.text_input}></TextInput>
           <TextInput
             placeholder="Password"
-            style={{
-              backgroundColor: '#f4a261',
-              borderColor: 'black',
-              borderRadius: 20,
-              width: 250,
-              borderWidth: 2,
-              fontSize: 18,
-              paddingLeft: 15,
-              marginBottom: 5,
-              opacity: 0.9,
-            }}></TextInput>
+            style={styles.text_input}></TextInput>
           <TextInput
             placeholder="Confirm Password"
-            style={{
-              backgroundColor: '#f4a261',
-              borderColor: 'black',
-              borderRadius: 20,
-              width: 250,
-              borderWidth: 2,
-              fontSize: 18,
-              paddingLeft: 15,
-              marginBottom: 5,
-              opacity: 0.9,
-            }}></TextInput>
+            style={styles.text_input}></TextInput>
           <Button
             title="Register"
             onPress={() => navigation.navigate('Details')}
@@ -124,6 +80,17 @@ const styles = StyleSheet.create({
     color: 'grey',
     fontSize: 30,
     fontWeight: 'bold',
+  },
+  text_input: {
+    backgroundColor: '#f4a261',
+    borderColor: 'black',
+    borderRadius: 20,
+    width: 250,
+    borderWidth: 2,
+    fontSize: 18,
+    paddingLeft: 15,
+    marginBottom: 5,
+    opacity: 0.9,
   },
 });
 
